@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SpaceX</title>
+        
+       
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        
+		<link rel="stylesheet" type="text/css" href="styles/index.css">
+       
+	</head>
+	<body>
+		<header>
+        <h1>SpaceX</h1>
+        </header>
+        
+		<main>
+            
+<!--brandstof-->
+        <div class="wrapper">
+            <div class="box1">
+                
+                <div class="paarsebalk">
+                    <h2 class="plaatsingBalk">Brandstof</h2>
+                </div>
+                
+               <div id="donut_single"></div>
+                
+            </div>
+            
+<!--Afstand over tijd-->
+            <div class="box2">
+                
+                <div class="paarsebalk">
+                    <h2>Afstand over tijd</h2>
+                </div>
+                
+                <div>
+                  <table>
+                    <tr>
+                      <th>Onderwerp</th>
+                      <th>Aantal</th>
+                      <th>Op schema?</th>
+                    </tr>
+                    <tr>
+                      <td>Afstand afgelegd</td>
+                      <td>163973 km</td>
+                      <td id="kruis">&#10007;</td>
+                    </tr>
+                    <tr>
+                      <td>Tijd verstreken</td>
+                      <td>10754 uur</td>
+                      <td id="vink">&#10003;</td>
+                    </tr>
+                  </table>
+                </div>
+
+            </div>
+            
+<!--snelheid-->
+            <div class="box3">
+                <div>
+                    <h2 class="paarsebalk">Snelheid</h2>
+                </div>
+                
+                <div class="myChart-container">
+                    <div id='myChart'>
+                        <a class="zc-ref" href="https://www.zingchart.com/">Powered by ZingChart</a>
+                    </div>
+                </div>                    
+            
+            </div>
+            
+            
+        </div>
+        </main>
+        
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+        
+        <!--brandstof-->
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        
+        <!--Afstand over tijd-->
+        
+        
+        <!--Voorraad 1-->
+        <script src= "https://cdn.zingchart.com/zingchart.min.js"></script>
+		<script> zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
+		ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9","ee6b7db5b51705a13dc2339db3edaf6d"];</script>
+        
+        <!--Voorraden-->
+        <script src="scripts/main.js"></script>
+        
+	</body>
+</html>
+

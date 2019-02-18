@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css?family=Iceland');
+
+* {
+    font-family: 'Iceland', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Iceland', cursive;
+/*
+    background-image: url('../images/abstract-astro-astronomy-956999.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+*/
+    background-color: lightblue;
+    color: #fff;
+}
+
+h1 {
+    font-family: 'Iceland', cursive;
+    margin: 0;
+    background-color: black;
+    color: white;
+    height: 60px;
+    padding-top: 5px;
+    padding-left: 2%;
+}
+
+h2 {
+    font-family: 'Iceland', cursive;
+    padding-top: 3px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.paarsebalk {
+    height: 60px;
+    background-color: #1A2C52;
+}
+
+                            /*Brandstof*/
+h2.plaatsingBalk {
+    margin: 0px 0 -20px 0;
+}
+
+.box1 {
+    grid-area: bs;
+/*    background-color: red;*/
+}
+
+#donut_single {
+    height: 350px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+svg {
+    height: 350px;
+}
+
+                            /*Afstand over tijd*/
+
+.box2 {
+    height: 400px;
+    grid-area: at;
+/*    background-color: blue;*/
+
+}
+
+table {
+    background-color: white;
+    color: #1A2C52;
+/*
+    border: 1px;
+    border-color: #1A2C52;
+*/
+    
+    border-radius: 5px;
+    width: 450px;
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+}
+
+td:hover {
+    background-color: #48548F;
+    color: white;
+}
+
+td {
+    text-align: center;
+}
+
+th {
+    background-color: #AEA9D2;
+}
+
+#kruis {
+    color: red;
+}
+
+#vink {
+    color: limegreen;
+}
+
+                            /*Snelheid*/
+
+.box3 {
+    grid-area: vr;
+/*    background-color: green;*/
+    height: 300px;
+}
+.myChart-container {
+    padding: 60px 0 0 0;
+}
+
+.zc-ref {
+  display: none;
+}
+
+#myChart-license-text {
+    display: none;
+}
+
+#myChart-menu {
+    display: none;
+}
+
+.zc-menu zc-style{
+    display: none;
+}
+
+img#myChart-img.zc-img {
+    height: 100px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    grid-template-areas: 
+      "bs"
+      "at"
+      "vr";
+}
+
+                                        /*TABLET*/
+
+@media only screen and (min-width: 768px) {
+    
+h1 {
+    background-color: red;
+    font-size: 41px;
+    height: 65px;
+    padding-top: 5px;
+    padding-left: 2%;
+}
+
+h2 {
+    padding-top: 5px;
+    font-size: 35px;
+}
+
+.paarsebalk {
+    height: 65px;
+    background-color: #1A2C52;
+}
+
+                            /*Brandstof*/
+h2.plaatsingBalk {
+/*    margin: 0px 0 -20px 0;*/
+}
+
+#donut_single {
+    height: 450px;
+    width: auto;
+}
+
+svg {
+    height: 450px;
+}
+
+                            /*Afstand over tijd*/
+
+.box2 {
+    height: 430px;
+}
+
+table {    
+    width: 60%;
+    height: 180px;
+    margin-top: 70px;
+    font-size: 22px;
+}
+
+
+                            /*Snelheid*/
+
+.box3 {
+    height: 300px;
+}
+    
+.myChart-container {
+    padding: 60px 0 0 0;
+}
+
+img#myChart-img.zc-img {
+    height: 100px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    grid-template-areas: 
+      "bs"
+      "at"
+      "vr";
+}
+}
+
+
+                                        /*LAPTOP*/
+
+@media only screen and (min-width: 1366px) {
+   
+h1 {
+    background-color: green;
+    font-size: 50px;
+    height: 80px;
+    padding-top: 4px;
+    padding-left: 3%;
+}
+
+h2 {
+    padding-top: 11px;
+    font-size: 45px;
+    margin: 0px;
+}
+
+.paarsebalk {
+    height: 100px;
+    background-color: #1A2C52;
+}
+
+                            /*Brandstof*/
+h2.plaatsingBalk {
+/*    margin: 0px 0 -20px 0;*/
+}
+
+#donut_single {
+    height: 750px;
+    width: auto;
+}
+
+svg {
+    height: 1000px;
+}
+
+                            /*Afstand over tijd*/
+
+.box2 {
+    height: 800px;
+}
+
+table {    
+    width: 70%;
+    height: 380px;
+    margin-top: 10%;
+    font-size: 30px;
+}
+
+
+
+                            /*Snelheid*/
+
+.box3 {
+    height: 300px;
+}
+    
+.myChart-container {
+    padding: 60px 0 0 0;
+}
+
+img#myChart-img.zc-img {
+    height: 100px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    grid-template-areas: 
+      "bs vr"
+      "at at";
+}
+}
+
+
+                                        /*DESKTOP*/
+
+@media only screen and (min-width: 1920px) {
+
+h1 {
+    background-color: blue;
+    font-size: 50px;
+    height: 80px;
+    padding-top: 4px;
+    padding-left: 3%;
+}
+
+h2 {
+    padding-top: 11px;
+    font-size: 45px;
+    margin: 0px;
+}
+
+.paarsebalk {
+    height: 100px;
+    background-color: #1A2C52;
+}
+
+                            /*Brandstof*/
+
+#donut_single {
+    height: 750px;
+    width: auto;
+}
+
+svg {
+    height: 1000px;
+}
+
+                            /*Afstand over tijd*/
+
+.box2 {
+    height: 800px;
+}
+
+table {    
+    width: 70%;
+    height: 380px;
+    margin-top: 10%;
+    font-size: 30px;
+}
+
+                            /*Snelheid*/
+
+.box3 {
+    height: 300px;
+}
+    
+.myChart-container {
+    padding: 60px 0 0 0;
+}
+
+img#myChart-img.zc-img {
+    height: 100px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    grid-template-areas: 
+      "bs vr"
+      "at at";
+}
+
+}
